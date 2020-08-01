@@ -1,0 +1,38 @@
+
+config core 'main'
+	option resourcebase '/luci-static/resources'
+	option lang 'zh_cn'
+	option mediaurlbase '/luci-static/argon_dark_purple'
+
+config extern 'flash_keep'
+	option uci '/etc/config/'
+	option dropbear '/etc/dropbear/'
+	option openvpn '/etc/openvpn/'
+	option passwd '/etc/passwd'
+	option opkg '/etc/opkg.conf'
+	option firewall '/etc/firewall.user'
+	option uploads '/lib/uci/upload/'
+
+config internal 'languages'
+	option zh_cn '中文 (Chinese)'
+
+config internal 'sauth'
+	option sessionpath '/tmp/luci-sessions'
+	option sessiontime '3600'
+
+config internal 'ccache'
+	option enable '1'
+
+config internal 'themes'
+	option Argon_Dark '/luci-static/argon_dark'
+	option Argon_Dark_Purple '/luci-static/argon_dark_purple'
+	option Argon_Light '/luci-static/argon_light'
+	option Argon_Light_Green '/luci-static/argon_light_green'
+	option Bootstrap '/luci-static/bootstrap'
+	option Material '/luci-static/material'
+
+config internal 'diag'
+	option dns 'openwrt.org'
+	option ping 'openwrt.org'
+	option route 'openwrt.org'
+
